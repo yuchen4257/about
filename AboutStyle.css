@@ -1,10 +1,10 @@
-
-        .textanimation {
+.textanimation {
           width: 100%;
           height: 100%;
           position: absolute;
         }
-        .content {
+
+.content {
           position: absolute;
           top: 50%;
           left: 50%;
@@ -18,7 +18,8 @@
           text-overflow: ellipsis;
           max-width: 100%;
         }
-        .content__container {
+
+.content__container {
           font-weight: 700;
           overflow: hidden;
           height: 40px;
@@ -26,17 +27,19 @@
         }
 
 
-        .content__container:before {
+.content__container:before {
             content: '[';
             left: 0;
         }
-        .content__container:after {
+
+.content__container:after {
           content: ']';
           position: absolute;
           right: 0;
         }
 
-        .content__container:after, .content__container:before {
+
+.content__container:after, .content__container:before {
           position: absolute;
           top: 0;
           color: rgb(220, 0, 0);
@@ -55,7 +58,7 @@
           margin: 0;
         }
 
-        .content__container__list {
+.content__container__list {
           margin-top: 0;
           padding-left: 32px;
           text-align: left;
@@ -68,12 +71,12 @@
           animation-iteration-count: infinite;
         }
 
-        .content__container__list__item {
+.content__container__list__item {
           line-height: 40px;
           margin: 0;
         }
 
-        @-webkit-keyframes opacity {
+@-webkit-keyframes opacity {
           0%, 100% {
             opacity: 0;
           }
@@ -81,7 +84,8 @@
             opacity: 1;
           }
         }
-        @-webkit-keyframes change {
+
+@-webkit-keyframes change {
           0%, 12.66%, 100% {
             -webkit-transform: translate3d(0, 0, 0);
                     transform: translate3d(0, 0, 0);
@@ -107,7 +111,8 @@
                     transform: translate3d(0, -25%, 0);
           }
         }
-        @keyframes opacity {
+
+@keyframes opacity {
           0%, 100% {
             opacity: 0;
           }
@@ -140,5 +145,4 @@
             -webkit-transform: translate3d(0, -25%, 0);
                     transform: translate3d(0, -25%, 0);
           }
-
 
